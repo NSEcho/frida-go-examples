@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/lateralusd/frida-go/frida"
+	"github.com/frida/frida-go/frida"
 )
 
 var sc = `

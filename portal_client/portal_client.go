@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/lateralusd/frida-go/frida"
+	"github.com/frida/frida-go/frida"
 )
 
 type cmd struct {
