@@ -53,8 +53,10 @@ func main() {
 				fmt.Fprintf(os.Stderr, "Error saving binary: %v\n", err)
 				os.Exit(1)
 			}
+			go func() {
+				done <- struct{}{}
+			}()
 		}
-		done <- struct{}{}
 	})
 	script.Load()
 
