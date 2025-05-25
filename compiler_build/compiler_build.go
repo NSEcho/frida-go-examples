@@ -22,7 +22,7 @@ func main() {
 		fmt.Printf("[*] Compiler diagnostics: %s\n", diag)
 	})
 
-	bundle, err := c.Build("agent.ts")
+	bundle, err := c.Build("agent.ts", nil)
 	if err != nil {
 		panic(err)
 	}

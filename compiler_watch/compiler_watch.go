@@ -36,7 +36,7 @@ func main() {
 		script.Load()
 	})
 
-	compiler.Watch("agent.ts")
+	compiler.Watch("agent.ts", nil)
 
 	r := bufio.NewReader(os.Stdin)
 	r.ReadLine()
